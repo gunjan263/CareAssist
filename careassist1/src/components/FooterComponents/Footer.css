@@ -1,0 +1,113 @@
+.footer-wrapper {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display:flex;
+ padding:0;
+  margin-top:0rem;
+  margin-bottom: 0;
+ /* background-color: #075985; */
+ background: linear-gradient(to right,#075985, #5072A7) !important;
+
+  }
+  
+.footer-section-one{
+  margin-left:3rem;
+}
+
+  .footer-logo-container {
+    margin-top:3rem;
+    max-width:140px;
+   
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-icons {
+    margin-top: 1rem;
+    margin-bottom:2rem;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .footer-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: white;
+  }
+  
+  .footer-section-two {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    margin-top:2rem;
+    margin-right:2rem;
+  }
+  
+  .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+    margin-right: 0rem;
+    margin-left:2rem
+  }
+
+  .footer-section-columns a {
+    text-decoration: none;
+    position: relative;
+    color:white;
+  }
+  
+  .footer-section-columns a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; /* Change color as needed */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .footer-section-columns a:hover::after {
+    width: 100%;
+  }
+  
+  .footer-section-columns span {
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+  }
+  .footer-section-columns-links{
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+    margin-right: 2rem;
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 800px) {
+    
+    .footer-wrapper {
+      flex-direction: column;
+    }
+    .footer-section-two {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    .footer-section-columns {
+      margin: 1rem 0rem;
+    }
+    .App {
+      max-width: 95vw;
+    }
+  }

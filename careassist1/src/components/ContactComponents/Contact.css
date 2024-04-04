@@ -1,0 +1,92 @@
+.contact-page-wrapper h1 {
+    max-width: 900px !important;
+  }
+  
+  .contact-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem 0rem 3rem 0rem;
+    /* background-image: url("D:\ReactHexaware\ReactApps\React_WS\careassist\src\assets\contactus.jpg"); */
+    padding:20px;
+  }
+  
+  .contact-form-container {
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5rem;
+  }
+  
+  .contact-form-container input {
+    flex: 1;
+    height: 100%;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-top:1rem;
+    background-color: whitesmoke;
+  }
+  input::placeholder {
+    color: black; 
+  }
+  
+  .contact-secondary-button {
+    padding: 1rem 1rem;
+    margin-left: 1rem;
+    margin-bottom:0.5rem;
+    margin-top: 1.5rem;
+    background-color: #075985;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+  }
+
+  .primary-heading {
+    font-size: clamp(1rem, 4vw, 2rem);
+    color: black;
+    max-width: 600px;
+    margin: 0;
+  }
+
+  @media (max-width: 800px) {
+    
+    .primary-heading {
+      text-align: center;
+      max-width: 90%;
+    }
+    
+    
+    .contact-form-container {
+      padding: 2rem !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem !important;
+    }
+    .contact-form-container input {
+      font-size: 1rem !important;
+      max-width: 100%;
+      padding: 0.5rem 1rem !important;
+      margin-bottom: 0.8rem !important;
+      text-align: center;
+    }
+    .App {
+      max-width: 95vw;
+    }
+  }

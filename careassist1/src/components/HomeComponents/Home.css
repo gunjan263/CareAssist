@@ -1,0 +1,88 @@
+.home-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width:1900px;
+    background-color: transparent;
+    background-image: url("../../assets/home-banner-background.jpg");
+    /* border-radius: 10px;  */
+    margin-bottom: 4rem;
+  }
+  
+  .home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left:3rem;
+  }
+
+ 
+
+
+  .home-primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: rgb(50, 49, 49);
+    margin: 1.5rem 0rem 0rem 2rem;
+  }
+  
+  .home-secondary-button {
+    padding: 0.5rem 0.5rem;
+    margin: 2rem 0rem 0rem 2rem;
+    background-color: #075985;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+  }
+
+  .home-secondary-button:hover {
+    background-color: #007791;
+  }
+  
+  .home-primary-heading {
+    margin-top:5rem;
+    font-size: clamp(1rem, 4vw, 3rem);
+    color: white;
+    max-width: 500px;
+    font-weight: bold;
+    margin-left:2rem;
+  
+  }
+
+  @media (max-width: 1000px) {
+    
+    .home-bannerImage-container {
+      max-width: 600px;
+    }
+  }
+  
+  
+  @media (max-width: 800px) {
+    
+    .home-text-section{
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    
+    
+    
+    .App {
+      max-width: 95vw;
+    }
+  }
+  
+  
+  
